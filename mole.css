@@ -1,9 +1,39 @@
-/* Your code here */
+.pf {
+  display: grid;            /* Set display property to grid */
+  grid-template-rows: auto; /* Define two rows */
+  grid-template-columns: repeat(4, 1fr); /* Define four columns */
+  gap: 10px;                /* Add some gap between grid items */
+  width: 640px;             /* Adjust the width if needed */
+  margin: 0 auto;           /* Center the grid */
+}
 
+.wgs {
+  height: 100px;            /* Adjusted height */
+  width: 150px;             /* Adjusted width */
+  position: relative;
+  overflow: hidden;         /* Hide overflow content */
+}
 
+.wgs__mole-head {
+  height: 25px;             /* Adjusted height */
+  width: 25px;              /* Adjusted width */
+  position: absolute;
+  top: 75px;                /* Adjusted top */
+}
+
+.wgs__mole-head--hidden {
+  margin-top: 50px;         /* This should remain the same as before */
+}
+
+.wgs__dirt-pile {
+  height: 30px;             /* Adjusted height */
+  width: 50px;              /* Adjusted width */
+  position: absolute;
+  top: 70px;                /* Adjusted top */
+}
 
 /* UNCOMMENT THE CODE BELOW WHEN DIRECTED */
-/* .sb {
+ .sb {
   background-color: cornflowerblue;
   border-bottom: 1px solid #645DED;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
@@ -12,17 +42,17 @@
   font-size: 30px;
   margin-bottom: 50px;
   padding: 10px 20px;
-} */
+}
 
-/* .sb__mole-counter {
+ .sb__mole-counter {
   flex: 1 0 0;
   text-align: right;
-} */
+}
 
-/* .sb__score-holder {
+ .sb__score-holder {
   flex: 1 0 0;
-} */
+}
 
-/* .sb__game-over--hidden {
+ .sb__game-over--hidden {
   display: none;
-} */
+} 
